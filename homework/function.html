@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+	function resultArrayA(number) { 
+		var  array = [];
+		for(var i = 1; i < +number + 1; i++){
+			array.push(i);
+		}
+		return array
+	}
+
+	var number = prompt("В: Введите число");
+	alert(resultArrayA(number));
+
+	function sumArrayB(array) {
+    	var sum = 0;
+		for(var i = 0; i < array.length; i++){
+			sum += parseInt(array[i]);
+		}
+		return sum
+	}
+
+	var array = prompt("С: Введите несколько чисел");
+
+	alert(sumArrayB(array.split(",")));
+
+	function maxArrayC(array){
+		var result = Math.max.apply(null, array);
+		return result
+	}
+
+	array = prompt("D:Введите несколько чисел");
+	alert(maxArrayC(array.split(",")))
+
+	function minArrayD(array){
+		var result = Math.min.apply(null, array);
+		return result
+	}
+
+	array = prompt("F : Введите несколько чисел");
+	alert(minArrayD(array.split(",")))
+
+	function evenNumberF(array){
+		result = []
+		for (var i = 0; i < array.length; i++) {
+			var division = array[i] % 2
+			if (division == 0){
+				result.push(array[i])
+			}
+		}
+		return result
+	}
+
+	array = prompt("Введите несколько чисел");
+
+	alert(evenNumberF(array.split(",")))
+
+</script>

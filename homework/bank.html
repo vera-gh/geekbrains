@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+var a = prompt("Введите сумму вклада.")
+var b = prompt("Введите годовой процент.")
+var c = 0
+var d
+a = parseInt(a);
+b = parseFloat(b);
+for(var i = 0; i < 5; i++){
+	c = a + ((a / 100) * b);
+	a = c;
+	d = i + 1
+	alert("Сумма за " + d + " год: " +  a);
+}
+
+
+
+</script>
